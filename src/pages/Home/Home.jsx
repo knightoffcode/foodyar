@@ -1,5 +1,6 @@
 import React from 'react'
 import Highlight from '../../components/Highlight/Highlight'
+import Recommendation from '../../components/Recommendation'
 
 /**
  *
@@ -10,6 +11,7 @@ function Home() {
     return (
         <div className='home-page'>
             <Highlight />
+            <Recommendation />
         </div>
     )
 }

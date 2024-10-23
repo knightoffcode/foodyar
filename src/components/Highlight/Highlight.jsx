@@ -1,12 +1,5 @@
 import React from 'react'
 
-import Slider from 'react-slick'
-import { FaAngleDown } from 'react-icons/fa'
-
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
-
 /**
  *
  * @returns
@@ -14,64 +7,30 @@ import "slick-carousel/slick/slick-theme.css";
 
 function Highlight() {
 
-    const banners = [
-        {
-            id: '7654567534',
-            name: 'null',
-            order: 1,
-            url: 'https://placeholder.co/1700x600',
-            link: null
-        },
-        {
-            id: '7654567534',
-            name: 'null',
-            order: 2,
-            url: 'https://placeholder.co/1700x600',
-            link: null
-        },
-        {
-            id: '7654567534',
-            name: 'null',
-            order: 3,
-            url: 'https://placeholder.co/1700x600',
-            link: null
-        }
-    ]
+    const banner = {
+        id: '7654567534',
+        name: 'Banner Título',
+        description: 'Essa é uma descrição breve do banner.',
+        url: 'https://placeholder.co/600x600',
+        link: '#'
+    };
 
-    const sliderSettings = {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        speed: 500,
-        infinite: false,
-        dots: true,
-        centerMode: false,
-        autoplay: true,
-        autoplaySpeed: 3000
-    }
     return (
         <div className="banner__head">
-            <div className='banner__wrapper'>
-                <div className='banner__tip'>
-                    <FaAngleDown className='banner__tip__icon' />
+            <div className="banner__wrapper" style={{ display: 'flex', alignItems: 'center' }}>
+                <div className="banner__content" style={{ flex: 1 }}>
+                    <h1 className="banner__title">{banner.name}</h1>
+                    <p className="banner__description">{banner.description}</p>
+                    <a href={banner.link} className="banner__button">
+                        <button>Saiba Mais</button>
+                    </a>
                 </div>
-                <Slider {...sliderSettings}>
-                    {
-                        banners
-                            ?
-                            (
-                                banners.map((banner, index) => (
-                                    <div className='banner' key={index}>
-                                        <img className='banner__image' src={banner.url} alt={banner.name} />
-                                    </div>
-                                ))
-                            )
-                            :
-                            null
-                    }
-                </Slider>
+                <div className="banner__image-wrapper" style={{ flex: 1 }}>
+                    <img className="banner__image" src={banner.url} alt={banner.name} style={{ maxWidth: '100%' }} />
+                </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Highlight
+export default Highlight;

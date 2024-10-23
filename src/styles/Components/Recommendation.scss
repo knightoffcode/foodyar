@@ -1,0 +1,93 @@
+/* Estilos da seção */
+.section__container {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section__subheader {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.section__header {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 40px;
+}
+
+/* Estilos das abas */
+.section__tabs {
+    margin-bottom: 30px;
+}
+
+.tab__button {
+    font-size: 1rem;
+    color: #333;
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: border-bottom 0.3s ease, color 0.3s ease;
+}
+
+.tab__button:hover {
+    color: #000;
+}
+
+.tab__button.active {
+    border-bottom: 2px solid #000;
+    font-weight: bold;
+}
+
+/* Estilos dos cards */
+.section__items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 200px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card__title {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.card__description {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+/* Estilos de avaliação com estrelas */
+.card__rating {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.card__rating svg {
+    transition: color 0.2s;
+}
+
+.card__rating svg:hover {
+    color: #ffcc00 !important;
+}
