@@ -10,9 +10,13 @@
         gap: 30px;
     }
 
-    &__image img {
-        max-width: 100%;
-        border-radius: 12px;
+    &__image {
+        flex: 1;
+
+        img {
+            max-width: 100%;
+            border-radius: 12px;
+        }
     }
 
     &__content {
@@ -37,10 +41,7 @@
     &__buttons {
         display: flex;
         gap: 20px;
-    }
-
-    
-    
+    }  
 }
 
 .appstore__button,

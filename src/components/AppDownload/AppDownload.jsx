@@ -9,24 +9,25 @@ function AppDownload() {
     return (
         <div className="appdownload__container">
             <div className="appdownload__image">
-                <img src="https://placeholder.co/400x600" alt="App Preview" />
+                <img src="/Home/App/app.png" alt="App Preview" />
             </div>
 
             <div className="appdownload__content">
-                <h2 className="appdownload__title">Download our App</h2>
+                <h2 className="appdownload__title">Download our app
+                and join the contest</h2>
                 <p className="appdownload__description">
-                    Tenha a melhor experiência ao nosso alcance com o app!
-                    Faça o download agora para iOS e Android.
+                In order to improve our cooking skills,
+                we do need a food photography 
                 </p>
 
                 <div className="appdownload__buttons">
                     <img
-                        src="https://placeholder.co/150x50"
-                        alt="Download on the App Store"
+                        src="/Home/App/app-store.png"
+                        alt="Download on the Apple Store"
                         className="appstore__button"
                     />
                     <img
-                        src="https://placeholder.co/150x50"
+                        src="/Home/App/play-store.png"
                         alt="Get it on Google Play"
                         className="playstore__button"
                     />
