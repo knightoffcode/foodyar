@@ -1,93 +1,111 @@
-/* Estilos da seção */
-.section__container {
-    padding: 40px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+.section {
+    &__container {
+        padding: 40px 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    &__subheader {
+        font-size: 1.3rem;
+        color: #8B8BA5;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+    &__header {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #222;
+        margin-bottom: 40px;
+    }
+
+    &__tabs {
+        margin-bottom: 30px;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.7rem;
+    }
 }
 
-.section__subheader {
-    font-size: 1.5rem;
-    color: #555;
-    margin-bottom: 10px;
-}
+.tab {
 
-.section__header {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #222;
-    margin-bottom: 40px;
-}
+    &__button {
+        font-size: 1.3rem;
+        color: #333;
+        background-color: transparent;
+        border: none;
+        padding: 10px 20px;
+        font-family: inherit;
+        font-weight: 500;
+        margin: 0 10px;
+        cursor: pointer;
+        transition: border-bottom 0.3s ease, color 0.3s ease;
+        position: relative;
+    }
 
-/* Estilos das abas */
-.section__tabs {
-    margin-bottom: 30px;
-}
+    &__button:hover {
+        color: #000;
+    }
 
-.tab__button {
-    font-size: 1rem;
-    color: #333;
-    background-color: transparent;
-    border: none;
-    padding: 10px 20px;
-    margin: 0 10px;
-    cursor: pointer;
-    transition: border-bottom 0.3s ease, color 0.3s ease;
-}
+    &__button.active {
+        color: #F7C531;
+        border-bottom: 2px solid transparent !important;
 
-.tab__button:hover {
-    color: #000;
-}
-
-.tab__button.active {
-    border-bottom: 2px solid #000;
-    font-weight: bold;
-}
-
-/* Estilos dos cards */
-.section__items {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 2px;
+            width: 90%;
+            background-color: #F7C531;
+        }
+    }
 }
 
 .card {
-    width: 200px;
+    width: calc(25% - 1.7rem);
     background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
     text-align: center;
     transition: transform 0.3s ease;
     margin-bottom: 30px;
-}
 
-.card:hover {
-    transform: scale(1.05);
-}
+    &:hover {
+        transform: scale(1.05);
+    }
 
-.card__title {
-    font-size: 1.2rem;
-    color: #333;
-    margin: 10px 0;
-}
+    &__title {
+        font-size: 1.4rem;
+        color: #333;
+        margin: 10px 0;
+    }
 
-.card__description {
-    font-size: 0.9rem;
-    color: #777;
-    margin-bottom: 15px;
-}
+    &__image {
+        width: 100%;
+    }
 
-/* Estilos de avaliação com estrelas */
-.card__rating {
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-}
+    &__description {
+        font-size: 1rem;
+        color: #777;
+        margin-bottom: 15px;
+    }
 
-.card__rating svg {
-    transition: color 0.2s;
-}
+    &__rating {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+    }
 
-.card__rating svg:hover {
-    color: #ffcc00 !important;
+    &__rating svg {
+        transition: color 0.2s;
+    }
+
+    &__rating svg:hover {
+        color: #ffcc00 !important;
+    }
 }
