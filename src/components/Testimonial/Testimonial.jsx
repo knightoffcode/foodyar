@@ -8,23 +8,25 @@ import { FaQuoteLeft } from 'react-icons/fa';
 
 function Testimonial() {
     const testimonial = {
-        text: "Este produto foi incrível! Superou todas as minhas expectativas e com certeza eu recomendo para todos que estão buscando qualidade.",
+        text: "Awalnya saya malu dengan mertua karena tidak bisa memasak, kini mereka lebih suka makan malam di rumah demi menyantap masakan yang saya buat sendiri.",
         author: {
-            name: 'Maria Silva',
-            role: 'Gerente de Marketing',
-            imageUrl: 'https://placeholder.co/100x100' // Link da imagem do autor
+            name: 'Camella Sarrah',
+            role: 'Vege Master',
+            imageUrl: '/Home/Testimonial/T1.png'
         }
     };
 
     return (
         <div className="testimonial__container">
-            {/* Texto da avaliação */}
             <div className="testimonial__quote">
-                <FaQuoteLeft className="quote__icon" />
+                <img
+                    className="quote__icon"
+                    src="/Home/Testimonial/quotes.png"
+                    alt="Quotes"
+                />
                 <p className="testimonial__text">{testimonial.text}</p>
             </div>
 
-            {/* Imagem e informações da pessoa */}
             <div className="testimonial__author">
                 <img
                     className="author__image"
@@ -41,4 +43,3 @@ function Testimonial() {
 }
 
 export default Testimonial;
-    
