@@ -5,9 +5,7 @@ import { BiUserCircle, BiMapPin, BiSearch } from 'react-icons/bi'
 import { IoMdLogOut } from 'react-icons/io'
 import { FiMapPin, FiGlobe, FiDollarSign } from 'react-icons/fi'
 import { CiMenuBurger } from 'react-icons/ci'
-import { AiOutlineShoppingCart } from 'react-icons/ai'
-import { GiKnockedOutStars, GiStarSwirl, GiGalaxy } from 'react-icons/gi'
-import { GrUpdate, GrMenu } from 'react-icons/gr'
+import Logo from "../../assets/logo.png"
 
 /**
  *
@@ -58,8 +56,9 @@ function Header() {
         <header className='header'>
             <div className='header__wrapper'>
                 <div className='header__logo'>
-                    <span className='header__logo__icon'>{/* Vega Retailers */}</span>
-                    <h1 className='header__logo__title'>Foodyar</h1>
+                    <span className='header__logo__icon'></span>
+                    <img className='header__logo__image' src={Logo} alt="" srcSet="" />
+                    {/* <h1 className='header__logo__title'>Foodyar</h1> */}
                 </div>
                 <nav className='header__menu'>
                     <button className='header__menu__cep'>
@@ -67,32 +66,11 @@ function Header() {
                         Informe seu CEP
                     </button>
                     <ul className='header__menu__list'>
-                        {/* <div className='header__menu__item'>
-                                <li className='header__item'>
-                                    <a
-                                        href='{page.url}'
-                                        className='header__link header__link--all'
-                                    >
-                                        <GrMenu className='header__link__icon' />
-                                        Ver todas as categorias
-                                    </a>
-                                </li>
-                                <div className='header__submenu'>
-                                    <ul className='header__submenu__list'>
-                                        <li className='header__submenu__item'>
-                                            <a
-                                                className='header__submenu__anchor'
-                                                href='{subpage.url}'
-                                            ></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div> */}
 
                         {menuPages.map((page, index) => (
                             <div key={index} className='header__menu__item'>
                                 <li className='header__item'>
-                                    <a href={page.url} className='header__link'>
+                                    <a href={page.url} className='header__link active'>
                                         {/* <FaAngleDown className="header__link__icon" /> */}
                                         {page.page}
                                     </a>
@@ -113,8 +91,21 @@ function Header() {
                                             </div>
                                         ))
                                         : null} */}
+
                             </div>
                         ))}
+                        <div className='header__menu__item'>
+                            <li className='header__item'>
+                                <a
+                                    href='{page.url}'
+                                    className='header__link header__link--mykitchen'
+                                >
+                                    My Kitchen
+                                </a>
+                            </li>
+
+                        </div>
+
                     </ul>
                     {/* <a className='header__menu__recent'>
                             <GrUpdate />
