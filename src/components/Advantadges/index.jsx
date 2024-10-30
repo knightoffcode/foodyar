@@ -1,2 +1,2 @@
-import Advantadges from './Advantadges'
-export default Advantadges
+import Advantadges from './Advantadges';
+export default Advantadges;

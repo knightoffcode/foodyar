@@ -22,7 +22,7 @@ function Advantages() {
         {
             id: 6900000,
             text: "Alumni",
-        }   
+        }
     ];
 
     return (

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 /**
  *
@@ -117,13 +117,15 @@ function Footer() {
                 }
             ]
         }
-    ]
+    ];
+
     const firstSections = footerPages.filter((item) =>
         item.hasOwnProperty('title')
-    )
+    );
+
     const lastSectionWithoutTitle = footerPages
         .filter((section) => !section.title)
-        .pop()
+        .pop();
 
     return (
         <footer className='footer'>
@@ -181,7 +183,7 @@ function Footer() {
                 </div>
             </div>
         </footer>
-    )
-}
+    );
+};
 
-export default Footer
+export default Footer;

@@ -11,15 +11,13 @@ function AppDownload() {
             <div className="appdownload__image">
                 <img src="/Home/App/app.png" alt="App Preview" />
             </div>
-
             <div className="appdownload__content">
                 <h2 className="appdownload__title">Download our app
-                and join the contest</h2>
+                    and join the contest</h2>
                 <p className="appdownload__description">
-                In order to improve our cooking skills,
-                we do need a food photography 
+                    In order to improve our cooking skills,
+                    we do need a food photography
                 </p>
-
                 <div className="appdownload__buttons">
                     <img
                         src="/Home/App/app-store.png"
@@ -35,6 +33,6 @@ function AppDownload() {
             </div>
         </div>
     );
-}
+};
 
 export default AppDownload;

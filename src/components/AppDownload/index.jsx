@@ -1,2 +1,2 @@
-import AppDownload from './AppDownload'
-export default AppDownload
+import AppDownload from './AppDownload';
+export default AppDownload;
