@@ -20,6 +20,19 @@
         margin: 20px 0;
         padding: 0 20px;
         z-index: 1;
+
+        
+        @media (max-width: 576px) {
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 767px) {}
+
+        @media (max-width: 991px) {}
+
+        @media (max-width: 1199px) {}
+
+        @media (max-width: 1399px) {}
     }
 
     &__author {
