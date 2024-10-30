@@ -72,9 +72,9 @@
             margin: 0 0.5rem -3px 0;
         }
 
-        &.active {
-            color: #272042;
-        }
+        // &.active {
+        //     color: #272042;
+        // }
 
         &--mykitchen {
             padding: .5rem 1rem;
@@ -82,11 +82,9 @@
             background-color: #FBE0DC;
             color: #272042;
         }
-
+        
         &:hover {
-            .header__submenu {
-                display: block !important;
-            }
+            color: #272042;
         }
     }
 
