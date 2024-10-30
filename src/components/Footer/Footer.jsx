@@ -159,7 +159,7 @@ function Footer() {
                     })}
                 </div>
                 <div className='footer__content'>
-                    <p className='footer__text'>Copyright © 2023</p>
+                    <p className='footer__text'>Copyright © 2024</p>
                     <ul className='footer__list'>
                         {[lastSectionWithoutTitle].map((section, index) => {
                             return (
