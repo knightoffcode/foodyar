@@ -1,2 +1,2 @@
-import Testimonial from './Testimonial'
-export default Testimonial
+import Testimonial from './Testimonial';
+export default Testimonial;

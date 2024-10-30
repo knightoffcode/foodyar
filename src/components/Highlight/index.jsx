@@ -1,2 +1,2 @@
-import Highlight from './Highlight'
-export default Highlight
+import Highlight from './Highlight';
+export default Highlight;

@@ -1,2 +1,2 @@
-import Recommendation from './Recommendation'
-export default Recommendation
+import Recommendation from './Recommendation';
+export default Recommendation;

@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaQuoteLeft } from 'react-icons/fa';
 
 /**
  *
@@ -7,6 +6,7 @@ import { FaQuoteLeft } from 'react-icons/fa';
  */
 
 function Testimonial() {
+
     const testimonial = {
         text: "Awalnya saya malu dengan mertua karena tidak bisa memasak, kini mereka lebih suka makan malam di rumah demi menyantap masakan yang saya buat sendiri.",
         author: {
@@ -26,7 +26,6 @@ function Testimonial() {
                 />
                 <p className="testimonial__text">{testimonial.text}</p>
             </div>
-
             <div className="testimonial__author">
                 <img
                     className="author__image"
@@ -40,6 +39,6 @@ function Testimonial() {
             </div>
         </div>
     );
-}
+};
 
 export default Testimonial;

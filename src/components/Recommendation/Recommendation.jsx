@@ -65,7 +65,6 @@ function Recommendation() {
         <div className="section__container">
             <h3 className="section__subheader" style={{ textAlign: 'center' }}>Watch Now</h3>
             <h1 className="section__header" style={{ textAlign: 'center', fontSize: '2rem' }}>Special to Try</h1>
-
             <div className="section__tabs" style={{ display: 'flex', justifyContent: 'center', margin: '20px 0' }}>
                 {tabs.map((tab, index) => (
                     <button
@@ -84,7 +83,6 @@ function Recommendation() {
                     </button>
                 ))}
             </div>
-
             <div className="section__items">
                 {tabs[selectedTab].items.map((item) => (
                     <div key={item.id} className="card">
@@ -105,6 +103,6 @@ function Recommendation() {
             </div>
         </div>
     );
-}
+};
 
 export default Recommendation;
