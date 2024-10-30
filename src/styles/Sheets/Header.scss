@@ -2,7 +2,6 @@
     width: 100%;
     z-index: 3;
     padding: 0 0 0.1rem;
-    background-color: rgb(255, 255, 255);
 
     &__wrapper {
         max-width: 1200px;
@@ -46,8 +45,6 @@
             font-size: 1.2rem;
         }
     }
-
-    &__nav {}
 
     &__menumobile {
         display: none;
@@ -108,27 +105,6 @@
             color: #272042;
         }
 
-        &--phone {
-            font-size: 1.2rem;
-            font-weight: 700;
-            padding: 0 2rem;
-
-            span {
-                font-size: 0.7rem;
-                display: block;
-                color: #606060;
-                text-align: end;
-                margin-top: 3px;
-            }
-        }
-
-        &--user {
-            padding: 8px 0 8px 12px;
-            font-size: $default-font-size;
-            display: inline-flex;
-            align-items: center;
-        }
-
         &:hover {
             .header__submenu {
                 display: block !important;
@@ -154,13 +130,6 @@
         }
 
         &__cep {
-            background-color: unset;
-            border: none;
-            display: inline-flex;
-            column-gap: 8px;
-            padding: 0;
-            font-size: 0.8rem;
-            align-items: center;
             display: none;
         }
 
@@ -170,17 +139,6 @@
             align-items: center;
             flex-grow: 1;
             gap: 2rem;
-        }
-
-        &__recent {
-            display: inline-flex;
-            gap: 0.5rem;
-            align-items: center;
-            font-size: 0.8rem;
-            color: $font-black;
-            text-decoration: none;
-            cursor: pointer;
-            display: none;
         }
 
         @media (max-width: 768px) {
@@ -221,17 +179,6 @@
             &:hover {
                 color: gray;
             }
-        }
-    }
-
-    &__return {
-        border: none;
-        background-color: unset;
-        cursor: pointer;
-
-        svg {
-            margin: 0 1rem -8px 0;
-            font-size: 1.5rem;
         }
     }
 }

@@ -61,10 +61,6 @@ function Header() {
                     {/* <h1 className='header__logo__title'>Foodyar</h1> */}
                 </div>
                 <nav className='header__menu'>
-                    <button className='header__menu__cep'>
-                        <BiMapPin className='header__link__icon' />
-                        Informe seu CEP
-                    </button>
                     <ul className='header__menu__list'>
 
                         {menuPages.map((page, index) => (
