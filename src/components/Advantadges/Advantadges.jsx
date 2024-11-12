@@ -26,13 +26,15 @@ function Advantages() {
     ];
 
     return (
-        <div className="advantages__container">
-            {advantages.map((advantage) => (
-                <div key={advantage.id} className="advantages__item">
-                    <h2 className="advantages__number">{advantage.id.toLocaleString('pt-BR')}+</h2>
-                    <h3 className="advantages__name">{advantage.text}</h3>
-                </div>
-            ))}
+        <div className="advantages">
+            <div className="advantages__container">
+                {advantages.map((advantage) => (
+                    <div key={advantage.id} className="advantages__item">
+                        <h2 className="advantages__number">{advantage.id.toLocaleString('pt-BR')}+</h2>
+                        <h3 className="advantages__name">{advantage.text}</h3>
+                    </div>
+                ))}
+            </div>
         </div>
     );
 };

@@ -9,7 +9,7 @@ function Highlight() {
 
     const banner = {
         id: '7654567534',
-        name: 'Eat What You Cook With Us, Together!',
+        name: 'Eat What You Cook W/ Us, Together!',
         description: 'When you eat something that cooked by yourself, the happiness is priceless..',
         url: '/Home/Highlight/Highlight.png',
         link: '#'

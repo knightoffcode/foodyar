@@ -130,34 +130,6 @@ function Footer() {
     return (
         <footer className='footer'>
             <div className='footer__wrapper'>
-                <div className='footer__pages'>
-                    {firstSections.map((section, index) => {
-                        return (
-                            <ul className='footer__pages__section' key={index}>
-                                <li className='footer__pages__name'>
-                                    <a
-                                        className='footer__pages__link footer__pages__link--name'
-                                        href=''
-                                    >
-                                        {section.title}
-                                    </a>
-                                </li>
-                                {section.pages.map((page, pageIndex) => {
-                                    return (
-                                        <li className='footer__pages__name' key={pageIndex}>
-                                            <a
-                                                className='footer__pages__link'
-                                                href={page.link}
-                                            >
-                                                {page.name}
-                                            </a>
-                                        </li>
-                                    )
-                                })}
-                            </ul>
-                        )
-                    })}
-                </div>
                 <div className='footer__content'>
                     <p className='footer__text'>Copyright © 2024</p>
                     <ul className='footer__list'>

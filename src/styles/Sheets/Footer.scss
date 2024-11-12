@@ -1,6 +1,5 @@
 .footer {
     background-color: $background-white;
-    padding: 32px 0 0;
 
     &__wrapper {
         max-width: 1200px;
@@ -74,6 +73,7 @@
         display: flex;
         flex-wrap: wrap;
         flex-grow: 1;
+        padding: 0 1rem;
 
         @media (max-width: 768px) {
             justify-content: center;
@@ -81,7 +81,6 @@
     }
 
     &__item {
-        min-width: 200px;
         padding: 0.5rem 0;
 
         &--powered {
@@ -105,6 +104,7 @@
     &__link {
         padding: 16px;
         text-decoration: none;
+        font-size: .8rem;
         color: $font-black;
     }
 }

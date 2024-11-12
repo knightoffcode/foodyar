@@ -2,8 +2,14 @@
     &__head {
         padding: 2rem 0 2rem;
         margin: 0 0 2rem;
-        height: calc(100vh - 72px);
-        background: linear-gradient(to left, rgba(244, 244, 244), rgba(244, 244, 244));
+        height: calc(90vh - 72px);
+        background: linear-gradient(90deg, rgba(0,0,0,.1) 1px, transparent 1px) 0 0, linear-gradient(rgba(0,0,0,.1) 1px, transparent 1px) 0 0;
+        background-size: 1rem 1rem;
+        background: repeating-linear-gradient(
+            45deg,
+            #d6d8e371,
+            #e8e8e8a6 1rem,
+          );
     }
 
     &__wrapper {
@@ -37,7 +43,7 @@
     }
 
     &__title {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 
     &__button {
@@ -58,7 +64,7 @@
 
     &__image-wrapper {
         flex: 1 1 0%;
-        height: 100%;
+        display: inline-flex;
 
         @media (max-width: 576px) {
             display: none;

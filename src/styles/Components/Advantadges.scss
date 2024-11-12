@@ -1,5 +1,15 @@
 .advantages {
 
+    // background: linear-gradient(90deg, rgba(0, 0, 0, .1) 1px, transparent 1px) 0 0, linear-gradient(rgba(0, 0, 0, .1) 1px, transparent 1px) 0 0;
+    // background-size: 1rem 1rem;
+    background: repeating-linear-gradient(45deg,
+            #d6d8e371,
+            #e8e8e8a6 1rem,
+        );
+    // background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle fill="%23f06" cx="50" cy="50" r="50"/></svg>');
+
+
+
     &__container {
         display: flex;
         justify-content: space-around;
@@ -17,6 +27,7 @@
         padding: 20px;
         border-radius: 12px;
         transition: transform 0.3s ease;
+        background-color: rgba(216, 215, 215, 0.45);
     }
 
     &__item:hover {
