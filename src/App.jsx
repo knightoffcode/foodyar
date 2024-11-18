@@ -2,9 +2,10 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
+import Home from './pages/Home/Home'
+import Review from './pages/Review/Review'
 
 import './styles/Main.scss'
-import Home from './pages/Home/Home'
 
 /**
  *
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
     {
         path: '/',
         element: <Home />
+    },
+    {
+        path: '/review/:id',
+        element: <Review />
     },
 ])
 

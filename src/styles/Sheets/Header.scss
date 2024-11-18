@@ -4,7 +4,7 @@
     padding: 0 0 0.1rem;
 
     &__wrapper {
-        max-width: 1200px;
+        max-width: 1000px;
         margin: auto;
         position: relative;
         display: flex;
@@ -89,7 +89,7 @@
     }
 
     &__menu {
-        max-width: 1200px;
+        max-width: 1000px;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
@@ -130,7 +130,7 @@
         padding: 0 0 32px;
 
         &__list {
-            max-width: 1200px;
+            max-width: 1000px;
             margin: auto;
             display: flex;
             flex-direction: column;
