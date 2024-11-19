@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaStar, FaAlignCenter   } from 'react-icons/fa';
+import { FaStar, FaAlignCenter } from 'react-icons/fa';
 
 /**
  * Componente Review para exibir detalhes de um item com comentários e evolução.
@@ -47,21 +47,25 @@ function Review() {
         <div className="review">
             <div className="review__container">
                 <div className="review__header" style={{ textAlign: 'center' }}>
-                    <img src={item.imageUrl} alt={item.title} className="review__image" />
-                    <h1 className="review__title">{item.title}</h1>
-                    <div className="review__rating">
-                        {Array.from({ length: 5 }, (_, i) => (
-                            <FaStar
-                                key={i}
-                                color={i < item.rating ? '#ffc107' : '#e4e5e9'}
-                                size={30}
-                            />
-                        ))}
+                    <div className="review__left">
+                        <img src={item.imageUrl} alt={item.title} className="review__image" />
+                    </div>
+                    <div className="review__right">
+                        <h1 className="review__title">{item.title}</h1>
+                        <div className="review__rating">
+                            {Array.from({ length: 5 }, (_, i) => (
+                                <FaStar
+                                    key={i}
+                                    color={i < item.rating ? '#ffc107' : '#e4e5e9'}
+                                    size={30}
+                                />
+                            ))}
+                        </div>
                     </div>
                 </div>
 
                 <div className="review__description">
-                    <FaAlignCenter />
+                    {/* <FaAlignCenter /> */}
                     <h3>Descrição Completa</h3>
                     <p>{item.description}</p>
                 </div>
